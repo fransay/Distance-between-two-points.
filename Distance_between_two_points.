@@ -1,0 +1,13 @@
+import math 
+#Let's say the stations are called A and B
+#The Northings and Eastings of A are represented by Na and Ea respectively.
+#The Northings and Eastings of B are represented by Nb and Eb respectively.
+
+Na =float(input("Enter the Northings value : "))
+Ea= float(input("Enter the Eastings value : "))
+
+Nb = float(input("Enter the Northings value : "))
+Eb =float(input("Enter the Eastings value : "))
+
+Distance_AB = math.sqrt((Nb-Na)**2+(Eb-Ea)**2)
+print("Hello Please the distance between the two points is ",Distance_AB, "Meters " )
