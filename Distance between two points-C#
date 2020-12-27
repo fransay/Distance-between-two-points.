@@ -1,0 +1,38 @@
+using System;
+  
+namespace IntroductionToProgramming
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Determining the distance between two stations 
+            Console.Write("Enter your preferred units = ");
+            string unit = Console.ReadLine();
+
+            Console.Write("Enter the Easting coordinates of the first " +
+                "point/station  = ");// We must accept the coordinate inputs of the user. 
+            double eastingOfstationA = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the Easting coordinates of the second " +
+                "point/station  = ");// We must accept the coordinate inputs of the user. 
+            double eastingOfstationB = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the Easting coordinates of the first " +
+                "point/station  = ");// We must accept the coordinate inputs of the user. 
+            double northingsOfstationA = double.Parse(Console.ReadLine());
+
+            Console.Write("Enter the Easting coordinates of the first " +
+                "point/station  = ");// We must accept the coordinate inputs of the user. 
+            double northingsOfstationB = double.Parse(Console.ReadLine());
+
+            double distanceBetweentheTwostations = Math.Sqrt
+                (((eastingOfstationB - eastingOfstationA) * (eastingOfstationB - eastingOfstationA)
+                + (northingsOfstationB - northingsOfstationA) * (northingsOfstationB - northingsOfstationA)));
+            Console.WriteLine("The distance between your two stations is = {0} {1}", 
+                distanceBetweentheTwostations,unit);
+            Console.ReadLine();  
+        }
+    }
+}    
+ 
